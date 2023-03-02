@@ -1,0 +1,94 @@
+@mixin flex($direction, $justify,$align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+
+// Typography
+@mixin heading_1($font_color){
+    font-family: 'Montserrat', sans-serif;
+    font-size:clamp(2rem, 4vw, 5vw); 
+    line-height: 105%;
+    color: $font_color;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+@mixin heading_2($font_color, ){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    line-height: 120%;
+    color: $font_color;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin heading_3($font_color, ){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
+    line-height: 120%;
+    color: $font_color;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+@mixin heading_4($font_color, ){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    line-height: 120%;
+    color: $font_color;
+    font-weight: 700;
+}
+@mixin heading_5($font_color, ){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 120%;
+    color: $font_color;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+@mixin body_copy($font_color, ){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 145%;
+    color: $font_color;
+    font-weight: 400;
+}
+
+@mixin caption($font_color, ){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    color: $font_color;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+@mixin small_text($font_color, ){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    line-height: 120%;
+    color: $font_color;
+    font-weight: 400;
+  
+}
+@mixin link_button($font_color, ){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 120%;
+    color: $font_color;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+@mixin button_primary( $bg_color, $color ){
+    padding: 1rem 2rem;
+    background-color:$bg_color ;
+    color: $color;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size:14px ;
+    font-weight: 700;
+}

@@ -1,0 +1,100 @@
+
+footer{
+    padding: 2rem 5%;
+    background-color: $secondary_colour;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap:1.2rem;
+
+    .footer_links{
+       
+        .footer_links_header{
+            @include caption($primary_colour);
+            // padding-left: 2.1rem;
+            text-transform: uppercase;
+            // padding-bottom: 1.2rem;
+            
+        }
+
+        ul{
+            
+            li{
+            
+                list-style: none;
+                padding-top: 1.2rem;
+                // margin-left: auto;
+                a{
+                    @include link_button($white_colour);
+                    text-decoration: none;
+                    &.active{
+                        color: $primary_colour;
+                        font-weight: 700;
+                    }
+                    &:hover{
+                        color: $primary_colour;            
+                    }
+                    
+                }
+            }
+        } 
+        
+    }
+    .footer_contact{
+
+        .footer_contact_header{
+            @include caption($primary_colour);
+            // padding-left: 2.1rem;
+            text-transform: uppercase;
+            // padding-bottom: 1.2rem;
+            
+        }
+
+        ul li{
+            
+            list-style: none;
+            padding-top: 1.2rem;
+            @include link_button($white_colour);
+            
+                    
+            i{
+                color: $primary_colour;
+                padding-right: 0.4rem;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .footer_service_links{
+
+        .footer_service_header{
+            @include caption($primary_colour);
+            // padding-left: 2.1rem;
+            text-transform: uppercase;
+        }
+        
+        ul{
+            
+            li{
+            
+                list-style: none;
+                padding-top: 1.2rem;
+                // margin-left: auto;
+                a{
+                    @include link_button($white_colour);
+                    text-decoration: none;
+                    &.active{
+                        color: $primary_colour;
+                        font-weight: 700;
+                    }
+                    &:hover{
+                        color: $primary_colour;            
+                    }
+                    
+                }
+            }
+        } 
+    }
+
+}
